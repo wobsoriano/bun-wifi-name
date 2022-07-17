@@ -1,19 +1,20 @@
-# bun starter
+# bun-wifi-name
 
-## Getting Started
+Get current wifi name with Bun.
 
-Click the [Use this template](https://github.com/wobsoriano/bun-lib-starter/generate) button to create a new repository with the contents starter.
+## Install
 
-OR
+```bash
+bun add bun-wifi-name
+```
 
-Run `bun create wobsoriano/bun-lib-starter ./my-lib`.
+## Usage
 
-## Features
+```js
+import getWifiName from 'bun-wifi-name'
 
-- [bun](https://github.com/oven-sh/bun) as package manager and task runner
-- Bundle with [tsup](https://github.com/egoist/tsup)
-- Release with [bumpp](https://github.com/antfu/bumpp)
-- Beautiful changelogs with [changelogithub](https://github.com/antfu/changelogithub)
+console.log(getWifiName())
+```
 
 ## License
 
