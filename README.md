@@ -1,6 +1,6 @@
 # bun-wifi-name
 
-Get current wifi name with Bun.
+Get current wifi name in Bun.
 
 ## Install
 
