@@ -11,7 +11,7 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "description": "Get current wifi name",
+  "description": "Get current wifi name with Bun.",
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "bun run build-fast --dts-resolve",
@@ -23,7 +23,8 @@
     "dist"
   ],
   "keywords": [
-    "bun"
+    "bun",
+    "wifi"
   ],
   "license": "MIT",
   "homepage": "https://github.com/wobsoriano/pkg-name#readme",
