@@ -3,5 +3,5 @@ import { getWifiName } from '../src'
 
 test('getWifiName', () => {
   const notEmpty = getWifiName() !== ''
-  expect(true).toBe(notEmpty)
+  expect(notEmpty).toBe(true)
 })
