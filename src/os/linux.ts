@@ -1,4 +1,4 @@
-import { exec } from 'bun-utilities'
+import { exec } from 'bun-utilities/spawn'
 
 const getWifiName = () => {
   const { stdout } = exec(['iwgetid', '--raw'])
