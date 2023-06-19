@@ -1,9 +1,7 @@
-import { exec } from 'bun-utilities/spawn'
-
 const getWifiName = () => {
-  const { stdout } = exec(['iwgetid', '--raw'])
+  const { stdout } = Bun.spawnSync(['iwgetid', '--raw'])
 
-  const name = stdout!.replace('\n', '')
+  const name = stdout.toString().replace('\n', '')
 
   if (!name) {
     throw new Error('Could not get SSID')

@@ -1,11 +1,9 @@
-import { exec } from 'bun-utilities/spawn'
-
 const getWifiName = () => {
-  const { stdout } = exec(['netsh', 'wlan', 'show', 'interface'])
+  const { stdout } = Bun.spawnSync(['netsh', 'wlan', 'show', 'interface'])
 
   let name
 
-  name = /^\s*SSID\s*: (.+)\s*$/gm.exec(stdout!)
+  name = /^\s*SSID\s*: (.+)\s*$/gm.exec(stdout.toString())
   name = name && name.length ? name[1] : null
 
   if (!name) {
