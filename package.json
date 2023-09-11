@@ -35,9 +35,9 @@
   "bugs": "https://github.com/wobsoriano/bun-wifi-name/issues",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "devDependencies": {
-    "bumpp": "^9.1.1",
-    "bun-types": "^0.6.9",
-    "tsup": "^7.0.0",
-    "typescript": "^5.1.3"
+    "bumpp": "^9.2.0",
+    "bun-types": "^1.0.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   }
 }
