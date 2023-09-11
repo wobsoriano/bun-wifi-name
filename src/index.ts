@@ -5,15 +5,16 @@ import getWin32WifiName from './os/win32'
 const OS = process.platform
 
 export function getWifiName() {
-  if (OS === "darwin") {
-    return getDarwinWifiName()
-  } else if (OS === 'win32') {
-    return getWin32WifiName()
-  } else if (OS === "linux") {
-    return getLinuxWifiName()
+  switch (OS) {
+    case 'darwin':
+      return getDarwinWifiName()
+    case 'win32':
+      return getWin32WifiName()
+    case 'linux':
+      return getLinuxWifiName()
+    default:
+      throw new Error("Not supported")
   }
-
-  throw new Error("Not supported")
 }
 
 export default getWifiName
